@@ -26,9 +26,9 @@ public class AssetTest_Video extends StandOut
 	public void runTest() throws Exception
 	{
 		// Login
-	    this.login = new Login();
-	    this.login.initialize(this.props, this.driver, this.baseUrl);
-	    this.login.login(props.getProperty("defaultTL"), props.getProperty("defaultpassword"));
+	    	this.login = new Login();
+	    	this.login.initialize(this.props, this.driver, this.baseUrl);
+	    	this.login.login(props.getProperty("defaultTL"), props.getProperty("defaultpassword"));
 		driver.get(this.baseUrl + "/assetpage");
 		
 		String assetName = "Video Asset";
