@@ -32,11 +32,11 @@ public class AssetPage
 			driver.findElement(By.linkText(asset)).click();
 			thisURL = driver.getCurrentUrl();
 			driver.get(baseURL + "/assetpage");
-	    } 
-	    catch (Exception exc)
-	    {
-	      exc.printStackTrace();
-	    }
+	    	} 
+	    	catch (Exception exc)
+	    	{
+			exc.printStackTrace();
+	    	}
 		return thisURL;
 	}
 	
@@ -57,7 +57,7 @@ public class AssetPage
 			driver.get(baseURL + "/assetpage");
 		}
 		catch (Exception exc)
-	    {
+	    	{
 		      exc.printStackTrace();
 		}
 		return src;
