@@ -37,12 +37,12 @@ public class AssetTest_PDF extends StandOut
 		AssetPage assetpage = new AssetPage(this.driver);
 		
 		// Verify asset url
-		String url = assetpage.verifyClickAsset_pdf(assetName, this.driver, this.baseUrl);
-		assertEquals(grabDbUrl, url);
+		String url = myResources.verifyClickAsset_pdf(assetName, this.driver, this.baseUrl);
+		assertThat(url, is(grabDbUrl));
 		
 		// Verify asset url response
-		String response = assetpage.verifyURLConnection(grabDbUrl);
-		assertEquals("OK", response);
+		String response = myResources.verifyURLConnection(grabDbUrl);
+		assertThat(response, is("OK"));
 		
 		// Logout
 		this.login.logout();
