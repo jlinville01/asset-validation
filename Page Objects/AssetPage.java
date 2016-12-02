@@ -38,7 +38,7 @@ public class AssetPage
 	 * @param driver	the driver for this class.
 	 * @throws Exception
 	 */
-	public MyResources(WebDriver driver) throws Exception 
+	public AssetPage(WebDriver driver) throws Exception 
 	{
 		PageFactory.initElements(driver, this);
 		this.wait = new WebDriverWait(driver, 10);
