@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import page_objects.AbstractPageObject;
+
 public class AssetPage extends AbstractPageObject
 {
 	@FindBy(css = "button.btn-primary.ok-button")
