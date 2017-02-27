@@ -7,10 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AssetPage
+public class AssetPage extends AbstractPageObject
 {
-	private WebDriverWait wait;
-	
 	@FindBy(css = "button.btn-primary.ok-button")
 	private WebElement okButton;
 	
